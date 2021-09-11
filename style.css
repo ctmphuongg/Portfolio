@@ -1,0 +1,336 @@
+    @import url('https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@400;500;700&display=swap');
+     :root {
+        --header-height: 3rem;
+        --hue-color: 7;
+        /*the first one in the hsl color mode*/
+        --first-color: hsl(var(--hue-color), 69%, 61%);
+        /*#6E57E0 - turn into hsl color mode*/
+        --first-color-second: hsl(var(--hue-color), 69%, 61%);
+        --first-color-alt: hsl(var(--hue-color), 57%, 53%);
+        --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
+        --title-color: hsl(var(--hue-color), 8%, 15%);
+        --text-color: hsl(var(--hue-color), 8%, 45%);
+        --text-color-light: hsl(var(--hue-color), 8%, 65%);
+        --input-color: hsl(var(--hue-color), 70%, 96%);
+        --body-color: hsl(var(--hue-color), 60%, 99%);
+        --container-color: #FFF;
+        --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
+        --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+        --hue-color2: 202;
+        /*the first one in the hsl color mode*/
+        --second-color: hsl(var(--hue-color2), 69%, 61%);
+        /*#6E57E0 - turn into hsl color mode*/
+        --second-color: hsl(var(--hue-color2), 69%, 61%);
+        --second-color-alt: hsl(var(--hue-color2), 57%, 53%);
+        --second-color-lighter: hsl(var(--hue-color2), 92%, 85%);
+        --title-color2: hsl(var(--hue-color2), 8%, 15%);
+        --text-color2: hsl(var(--hue-color2), 1%, 45%);
+        --text-color-light2: hsl(var(--hue-color2), 8%, 65%);
+        --input-color: hsl(var(--hue-color2), 70%, 96%);
+        /*Font and typography*/
+        --body-font: 'Kaisei HarunoUmi', serif;
+        /*using rem units*/
+        --big-font-size: 2rem;
+        --h1-font-size: 2.5rem;
+        --h2-font-size: 1.25rem;
+        --h3-font-size: 1rem;
+        --normal-font-size: .938rem;
+        --small-font-size: .813rem;
+        --smaller-font-size: .75rem;
+        --font-medium: 500;
+        --font-bold: 700;
+        /*margin*/
+        --mb-0-25: .25rem;
+        --mb-0-5: .5rem;
+        --mb-0-75: .75rem;
+        --mb-1: 1rem;
+        --mb-1-5: 1.5rem;
+        --mb-2: 2rem;
+        --mb-2-5: 2.5rem;
+        --mb-3: 3rem;
+        /*z index*/
+        --z-tooltip: 10;
+        --z-fixed: 100;
+        --z-model: 1000;
+    }
+    
+    @media screen and (min-width: 968px) {
+         :root {
+            --big-font-size: 3rem;
+            --h1-font-size: 2.25rem;
+            --h2-font-size: 1.5rem;
+            --h3-font-size: 1.25rem;
+            --normal-font-size: 1rem;
+            --small-font-size: .875rem;
+            --smaller-font-size: .813rem;
+        }
+    }
+    
+    body.dark-theme {
+        --first-color-second: hsl(var(--hue-color), 30%, 8%);
+        --title-color: hsl(var(--hue-color), 8%, 95%);
+        --text-color: hsl(var(--hue-color), 8%, 75%);
+        --input-color: hsl(var(--hue-color), 29%, 16%);
+        --body-color: hsl(var(--hue-color), 28%, 12%);
+        --container-color: hsl(var(--hue-color), 29%, 16%);
+        --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
+        --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
+    }
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    /* width */
+    
+     ::-webkit-scrollbar {
+        width: .6rem;
+        border-radius: .5rem;
+        background-color: var(--scroll-bar-color);
+    }
+    /* Handle */
+    
+     ::-webkit-scrollbar-thumb {
+        background-color: var(--scroll-thumb-color);
+        border-radius: .5rem;
+    }
+    
+     ::-webkit-scrollbar-thumb:hover {
+        background-color: var(--text-color-light);
+    }
+    
+    body {
+        margin: 0 0 var(--header-height) 0;
+        font-family: var(--body-font) !important;
+        font-size: var(--normal-font-size) !important;
+        background-color: var(--body-color) !important;
+        color: var(--text-color) !important;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4 {
+        color: var(--title-color);
+        font-weight: var(--font-bold);
+    }
+    
+    .navbar-nav {
+        text-align: right !important;
+    }
+    
+    ul {
+        list-style: none;
+        backdrop-filter: blur(15px);
+    }
+    
+    a {
+        text-decoration: none !important;
+        color: black !important;
+    }
+    
+    a:hover {
+        color: var(--first-color) !important;
+    }
+    
+    .header {
+        width: 100%;
+        position: fixed;
+        left: 0;
+        z-index: var(--z-fixed);
+        background-color: var(--body-color);
+    }
+    
+    .nav-item {
+        padding-left: 2rem;
+    }
+    /* Home */
+    
+    .home__img {
+        border-radius: 300px !important;
+    }
+    
+    .one {
+        padding-top: 2% !important;
+    }
+    
+    .home-container {
+        gap: 1rem;
+    }
+    
+    .home__content {
+        grid-template-columns: .5fr 3fr;
+        padding-top: 4rem;
+        align-items: center;
+    }
+    
+    .home__social {
+        display: grid;
+        grid-template-columns: max-content;
+        padding-top: 3rem;
+        row-gap: 1rem;
+    }
+    
+    .home__social-icon {
+        font-size: 1.25rem;
+        color: #FFF !important;
+    }
+    
+    .home__social-icon:hover {
+        color: var(--first-color-alt);
+    }
+    
+    .home__intro {
+        margin-top: -70px;
+        color: #FFF !important;
+    }
+    
+    .section-home {
+        background-image: url("./images/BG(2).png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        object-fit: cover;
+    }
+    /*achievements/education*/
+    
+    .achievements {
+        padding-bottom: 6rem;
+        padding-top: 6rem;
+    }
+    
+    .section__title {
+        color: var(--first-color) !important;
+        font-size: var(--h1-font-size);
+    }
+    
+    .achievements hr {
+        color: var(--first-color) !important;
+        border-top: 2px solid;
+        max-width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .achievements__tabs {
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: var(--mb-2);
+    }
+    
+    .achievements__button {
+        font-size: var(--h3-font-size);
+        font-weight: var(--font-medium);
+        cursor: pointer;
+    }
+    
+    .achievements__button:hover {
+        color: var(--first-color);
+    }
+    
+    .achievements__icon {
+        font-size: 1.8rem;
+        margin-right: var(--mb-0-25);
+    }
+    
+    .achievements__data {
+        display: grid;
+        text-align: right;
+        grid-template-columns: 1fr max-content 1fr;
+        column-gap: 1.5rem;
+    }
+    
+    .achievements__data__2 {
+        text-align: left !important;
+    }
+    
+    .achievements__title {
+        font-size: var(--normal-font-size);
+        font-weight: var(--font-medium);
+    }
+    
+    .achievements__subtitle {
+        display: inline-block;
+        font-size: var(--small-font-size);
+        margin-bottom: var(--mb-1);
+    }
+    
+    .achievements__calendar {
+        font-size: var(--smaller-font-size);
+        color: var(--text-color-light);
+    }
+    
+    .achievements__rounder {
+        display: inline-block;
+        width: 13px;
+        height: 13px;
+        background-color: var(--first-color);
+        border-radius: 50%;
+    }
+    
+    .achievements__line {
+        display: block;
+        width: 1px;
+        height: 100%;
+        background-color: var(--first-color);
+        transform: translate(6px, -7px);
+    }
+    
+    .achievements [data-content] {
+        display: None;
+    }
+    
+    .achievements__active[data-content] {
+        display: block;
+    }
+    
+    .achievements__button.achievements__active {
+        color: var(--first-color);
+    }
+    /* Community */
+    
+    .row {
+        padding-top: 5rem;
+    }
+    
+    .community h3 {
+        color: var(--second-color);
+        font-size: var(--h1-font-size);
+    }
+    
+    .community h4 {
+        color: var(--second-color-alt);
+    }
+    
+    .community {
+        color: var(--text-color2);
+    }
+    
+    .community img {
+        justify-content: center;
+        max-width: 80%;
+        border-radius: 50px;
+    }
+    
+    .Eca__img {
+        max-width: 70% !important;
+    }
+    
+    .community hr {
+        color: var(--second-color) !important;
+        border-top: 2px solid;
+        max-width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .sugar__content {
+        text-align: left;
+        list-style: circle;
+    }
+    
+    .Eca__page {
+        color: #FFF !important;
+    }
+    
+    .btn {
+        background-color: var(--second-color) !important;
+    }
