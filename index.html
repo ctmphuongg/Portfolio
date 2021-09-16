@@ -15,9 +15,11 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link href="style.css" rel="stylesheet">
     <title>Phuong Cao</title>
+
 </head>
 
 <body>
+
     <header class="header" id="header">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
@@ -31,18 +33,18 @@
                             <a class="nav-link" href=#></a>
                         </li>
                     </ul>
-                    <ul class="navbar-nav me-2">
+                    <ul class="navbar-nav me-2" id="nav-menu">
                         <li class="nav-item">
-                            <a href="#home">Home</a>
+                            <a href="#Home" class="nav-link active-link">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#about">About</a>
+                            <a href="#awards" class="nav-link">Education</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#projects">Projects</a>
+                            <a href="#community" class="nav-link">Community</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#contact">Contact me!</a>
+                            <a href="#footer" class="nav-link">Contact me!</a>
                         </li>
                     </ul>
                 </div>
@@ -50,7 +52,8 @@
         </nav>
     </header>
     <main>
-        <section id="Home">
+
+        <section class="section" id="Home">
             <div class="section-home text-center">
                 <div class="home-container container grid">
                     <div class="home__content grid">
@@ -190,46 +193,150 @@
         </section>
 
 
-        <section class="community">
+        <section class="quietude section" id="quietude">
             <div class="container-fluid col-md-12 text-center">
+
+                <h3>Quietude</h3>
+                <hr>
+                <div class="row small__part">
+                    <div class="col-md-6">
+                        <img src="images/books.jpg" width="500">
+
+                    </div>
+                    <div class=" col-md-6 paragraph__text">
+                        <h4>Books</h4>
+                        <p class="sugar__content">
+                            Led a team of 11 volunteers to teach disadvantaged children and helped 2 students to improve in Math. Led a team of 10 volunteers to raise funds for the organization, sold more than 150 fundraising items, and make 2 million VND profit. Planned, divided,
+                            and managed the work of volunteers in Workshop Vuon(g), attracting approximately 100 participants.
+                        </p>
+                    </div>
+                </div>
+                <div class="row small__part">
+                    <div class="col-md-6 paragraph__text__2">
+                        <h4>THE ECATALYST</h4>
+                        <p>COFOUNDER, PRESIDENT| 2/2021-present</p>
+                        <p class="sugar__content ">
+                            Founded The Ecatalyst, a project aiming to raise awareness and inform followers about environmental issues, with a page of over 1400 followers. Created orientation plan, edited and gave feedback on work of departments. Coordinated 37 members nationwide
+                            to organized an online contest and workshop attracting 150 and 100 participants respectively
+                        </p>
+                        <div>
+                            <audio loop id="audio">
+                            <source src=" ./media/fav__music.mp3 " type="audio/mpeg ">
+                            </audio>
+                            <button class="btn btn-danger" id="playPauseBTN" onclick="playPause()">Listen to my favorite one</button> </div>
+                    </div>
+                    <div class="col-md-6 ">
+                        <img src="images/music.jpg " width="600 ">
+                    </div>
+                </div>
+                <div class="row small__part">
+                    <div class="col-md-6">
+                        <img src="images/wandering.png" width="500">
+
+                    </div>
+                    <div class=" col-md-6 paragraph__text">
+                        <h4>Books</h4>
+                        <p class="sugar__content">
+                            Led a team of 11 volunteers to teach disadvantaged children and helped 2 students to improve in Math. Led a team of 10 volunteers to raise funds for the organization, sold more than 150 fundraising items, and make 2 million VND profit. Planned, divided,
+                            and managed the work of volunteers in Workshop Vuon(g), attracting approximately 100 participants.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="community section " id="community ">
+            <div class="container-fluid col-md-12 text-center ">
 
                 <h3>Community</h3>
                 <hr>
-                <div class="row">
-                    <div class="col-md-6">
-                        <img src="images/SUGAR_WS.jpg" width="500">
-                        <p class="text-muted"> Workshop Vuong(g) </p>
+                <div class="row ">
+                    <div class="col-md-6 ">
+                        <img src="images/SUGAR_WS.png " width="500 ">
+                        <p class="text-muted "> Workshop Vuong(g) </p>
                     </div>
                     <div class="col-md-6 ">
                         <h4>SUGAR VIETNAM - Route to knowledge</h4>
                         <p>HEAD OF ACADEMICS, LEADER OF FR TEAM 2 | 9/2020-1/2021</p>
-                        <ul class="sugar__content">
+                        <ul class="sugar__content ">
                             <li> Led a team of 11 volunteers to teach disadvantaged children and helped 2 students to improve in Math.
                             </li>
                             <li>Led a team of 10 volunteers to raise funds for the organization, sold more than 150 fundraising items, and make 2 million VND profit.</li>
                             <li>Planned, divided, and managed the work of volunteers in Workshop Vuon(g), attracting approximately 100 participants. </li>
                         </ul>
                     </div>
-                    <div class="row">
-                        <div class="col-md-6">
+                    <div class="row ">
+                        <div class="col-md-6 ">
                             <h4>THE ECATALYST</h4>
                             <p>COFOUNDER, PRESIDENT| 2/2021-present</p>
-                            <ul class="sugar__content">
+                            <ul class="sugar__content ">
                                 <li> Founded The Ecatalyst, a project aiming to raise awareness and inform followers about environmental issues, with a page of over 1400 followers.
                                 </li>
                                 <li>Created orientation plan, edited and gave feedback on work of departments.</li>
                                 <li>Coordinated 37 members nationwide to organized an online contest and workshop attracting 150 and 100 participants respectively</li>
                             </ul>
-                            <button type="button" class="btn btn-primary "><a class="Eca__page" href="https://www.facebook.com/theecatalyst.org">Visit us</a></button>
+                            <button type="button " class="btn"><a class="Eca__page " href="https://www.facebook.com/theecatalyst.org ">Visit us</a></button>
                         </div>
                         <div class="col-md-6 ">
-                            <img src="images/Logo.png" width="500" class="Eca__img">
+                            <img src="images/Logo.png " width="500 " class="Eca__img ">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+    <!--footer-->
+    <footer class='footer' id="footer ">
+        <div class="footer__bg ">
+            <div class="footer__container container grid ">
+                <div>
+                    <h1 class="footer__title ">Minh Phuong</h1>
+                    <span class="footer__subtitle ">         
+                        <!--<figure>
+                            <audio
+                                loop
+                                controls
+                                src="./media/fav__music.mp3 "
+                                autoplay >
+                                    Your browser does not support the
+                                    <code>audio</code> element.
+                            </audio>
+                        </figure>-->
+                     </span>
+                </div>
+
+                <ul class="footer__links ">
+                    <li>
+                        <span class="footer__link "> <i class="uil uil-envelope-edit " style="font-size: 1.5rem; "></i>  phuong.caothiminh.contact@gmail.com</span>
+                    </li>
+
+                    <li>
+                        <span class="footer__link "><i class="uil uil-mobile-vibrate " style="font-size: 1.5rem; "></i>  (+84) 938 780 690</span>
+                    </li>
+                    <li>
+                        <span class="footer__link "><i class="uil uil-location-pin-alt " style="font-size: 1.5rem; "></i>  Ho Chi Minh City, Vietnam</span>
+                    </li>
+
+
+                </ul>
+
+                <div class="footer__socials ">
+                    <a href=# target="_blank " class="footer__social ">
+                        <i class="uil uil-facebook-f "></i>
+                    </a>
+
+                    <a href=# target="_blank " class="footer__social ">
+                        <i class="uil uil-instagram "></i>
+                    </a>
+
+                    <a href=# target="_blank " class="footer__social ">
+                        <i class="uil uil-github-alt "></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
     <script src=" https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js "></script>
     <script type="application/javascript " src="main.js "></script>
 
