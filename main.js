@@ -106,6 +106,8 @@ tabs.forEach(tab => {
     })
 })
 
+
+
 var audio = document.getElementById('audio');
 var playPauseBTN = document.getElementById('playPauseBTN');
 var count = 0;
