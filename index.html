@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -13,6 +14,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
     <link href="style.css" rel="stylesheet">
     <title>Phuong Cao</title>
 
@@ -85,7 +87,7 @@
 
         <!--Achievements-->
         <section class="achievements section text-center" id="awards">
-            <h2 class="section__title" id="title">Education & Achievements</h2>
+            <h2 class="section__title title">Education & Achievements</h2>
             <hr>
 
             <div class="achievements__container container ">
@@ -194,7 +196,7 @@
 
 
         <section class="quietude section" id="quietude">
-            <div class="container-fluid col-md-12 text-center">
+            <div class="container-fluid text-center">
 
                 <h3 id="title">Quietude</h3>
                 <hr>
@@ -203,7 +205,7 @@
                         <img src="images/books.jpg" width="500">
 
                     </div>
-                    <div class=" col-md-6 paragraph__text">
+                    <div class=" col-md-6 paragraph__text" data-aos="fade-up">
                         <h4>Books</h4>
                         <p class="sugar__content">
                             Led a team of 11 volunteers to teach disadvantaged children and helped 2 students to improve in Math. Led a team of 10 volunteers to raise funds for the organization, sold more than 150 fundraising items, and make 2 million VND profit. Planned, divided,
@@ -211,8 +213,8 @@
                         </p>
                     </div>
                 </div>
-                <div class="row small__part">
-                    <div class="col-md-6 paragraph__text__2">
+                <div class="row col-md-12 small__part">
+                    <div class="col-md-6 paragraph__text__2" data-aos="fade-up">
                         <h4>THE ECATALYST</h4>
                         <p>COFOUNDER, PRESIDENT| 2/2021-present</p>
                         <p class="sugar__content ">
@@ -234,15 +236,16 @@
                         <img src="images/wandering.png" width="500">
 
                     </div>
-                    <div class=" col-md-6 paragraph__text">
+                    <div class=" col-md-6 paragraph__text" data-aos="fade-up">
                         <h4>Books</h4>
-                        <p class="sugar__content">
+                        <p>
                             Led a team of 11 volunteers to teach disadvantaged children and helped 2 students to improve in Math. Led a team of 10 volunteers to raise funds for the organization, sold more than 150 fundraising items, and make 2 million VND profit. Planned, divided,
                             and managed the work of volunteers in Workshop Vuon(g), attracting approximately 100 participants.
                         </p>
                     </div>
                 </div>
             </div>
+
         </section>
         <section class="community section " id="community ">
             <div class="container-fluid col-md-12 text-center ">
@@ -254,7 +257,7 @@
                         <img src="images/SUGAR_WS.png " width="500 ">
                         <p class="text-muted "> Workshop Vuong(g) </p>
                     </div>
-                    <div class="col-md-6 ">
+                    <div class="col-md-6 " data-aos="fade-up">
                         <h4>SUGAR VIETNAM - Route to knowledge</h4>
                         <p>HEAD OF ACADEMICS, LEADER OF FR TEAM 2 | 9/2020-1/2021</p>
                         <ul class="sugar__content ">
@@ -265,7 +268,7 @@
                         </ul>
                     </div>
                     <div class="row ">
-                        <div class="col-md-6 ">
+                        <div class="col-md-6 " data-aos="fade-up">
                             <h4>THE ECATALYST</h4>
                             <p>COFOUNDER, PRESIDENT| 2/2021-present</p>
                             <ul class="sugar__content ">
@@ -283,6 +286,10 @@
                 </div>
             </div>
         </section>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </main>
     <!--footer-->
     <footer class='footer' id="footer ">

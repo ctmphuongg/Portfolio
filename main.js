@@ -106,7 +106,7 @@ tabs.forEach(tab => {
     })
 })
 
-
+tl.fromTo(".small__part", 1, { opacity: 0, y: 10 }, "+=2.5")
 
 var audio = document.getElementById('audio');
 var playPauseBTN = document.getElementById('playPauseBTN');
