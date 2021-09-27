@@ -285,7 +285,7 @@
                 .achievements__button.achievements__active {
                     color: var(--first-color);
                 }
-                /* Community */
+                /* Interests */
                 
                 .row {
                     padding-top: 5rem;
@@ -335,6 +335,12 @@
                     }
                 }
                 
+                @media screen and (min-width:700px) {
+                    .illustration {
+                        padding-top: 3rem;
+                    }
+                }
+                
                 .community h3 {
                     margin-top: 4rem;
                     color: var(--second-color);
@@ -349,9 +355,9 @@
                     color: var(--text-color2);
                 }
                 
-                .community img {
+                .illustration {
                     justify-content: center;
-                    max-width: 80%;
+                    max-width: 90%;
                 }
                 
                 .Eca__img {
@@ -371,6 +377,10 @@
                     justify-content: center;
                     padding-left: 1rem;
                     padding-right: 2rem;
+                }
+                
+                .paragraph__text__2 {
+                    padding-left: 2rem;
                 }
                 
                 .sugar__content {
@@ -396,6 +406,45 @@
                     .paragraph__text__2 {
                         margin-bottom: 2.5rem;
                     }
+                }
+                /* STEM */
+                
+                .STEM h3 {
+                    color: var(--first-color);
+                    font-size: var(--h1-font-size);
+                }
+                
+                .STEM h4 {
+                    color: var(--first-color-alt);
+                }
+                
+                .STEM {
+                    color: var(--text-color);
+                }
+                
+                .STEM img {
+                    justify-content: center;
+                    max-width: 100%;
+                }
+                
+                .STEM hr {
+                    color: var(--first-color) !important;
+                    border-top: 2px solid;
+                    max-width: 30%;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                
+                .STEM .small-text {
+                    max-width: 50%;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                
+                .STEM .btn {
+                    background-color: var(--first-color);
+                    outline: var(--first-color);
+                    color: #FFF;
                 }
                 /*Footer*/
                 
