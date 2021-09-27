@@ -1,3 +1,17 @@
+var audio = document.getElementById("audio");
+var playPauseBTN = document.getElementById("playPauseBTN");
+var count = 0;
+
+function playPause() {
+    if (count == 0) {
+        count = 1;
+        audio.play();
+    } else {
+        count = 0;
+        audio.pause();
+    }
+}
+
 const navMenu = document.getElementById('nav-menu'),
     navToggle = document.getElementById('nav-toggle'),
     navClose = document.getElementById('nav-close')
@@ -87,6 +101,13 @@ tl
         scale: 0.2,
         opacity: 0
     })
+    .to(
+        ".four",
+        0.7, {
+            opacity: 0,
+            y: 10
+        },
+        "+=2.5")
 const tabs = document.querySelectorAll('[data-target]'),
     tabContents = document.querySelectorAll('[data-content]')
 
@@ -107,17 +128,3 @@ tabs.forEach(tab => {
 })
 
 tl.fromTo(".small__part", 1, { opacity: 0, y: 10 }, "+=2.5")
-
-var audio = document.getElementById('audio');
-var playPauseBTN = document.getElementById('playPauseBTN');
-var count = 0;
-
-function playPause() {
-    if (count == 0) {
-        count = 1
-        audio.play()
-    } else {
-        count = 0
-        audio.pause()
-    }
-}
