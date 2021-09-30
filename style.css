@@ -445,6 +445,16 @@
                     background-color: var(--first-color);
                     outline: var(--first-color);
                     color: #FFF;
+                    text-align: center;
+                    align-items: center;
+                }
+                
+                .blog__page {
+                    color: #FFF!important;
+                }
+                
+                .blog__page:hover {
+                    color: var(--first-color-lighter) !important;
                 }
                 /*Footer*/
                 
@@ -469,7 +479,8 @@
                 }
                 
                 .footer__subtitle {
-                    font-size: var(--small-font-size);
+                    padding-top: 1rem;
+                    font-size: var(--normal-font-size);
                 }
                 
                 .footer__links {
@@ -486,7 +497,7 @@
                 }
                 
                 .footer__social:hover {
-                    color: var(--first-color-lighter) !important;
+                    color: var(--second-color-lighter) !important;
                 }
                 
                 .footer__title,
