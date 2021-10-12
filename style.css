@@ -72,9 +72,10 @@
                                         --h1-font-size: 3.5rem;
                                         --h2-font-size: 2.8rem;
                                         --h3-font-size: 2.5rem;
-                                        --normal-font-size: 2rem;
-                                        --small-font-size: 1.5rem;
-                                        --smaller-font-size: 1.2rem;
+                                        --h4-font-size: 2.3rem;
+                                        --normal-font-size: 1.7rem;
+                                        --small-font-size: 1.3rem;
+                                        --smaller-font-size: 1rem;
                                     }
                                 }
                                 
@@ -163,6 +164,7 @@
                                 
                                 .home__img {
                                     border-radius: 300px !important;
+                                    max-width: 200px;
                                 }
                                 
                                 .one {
@@ -222,6 +224,9 @@
                                 @media screen and (min-width: 1920px) {
                                     .section-home {
                                         background-image: url("./images/MAC.png");
+                                    }
+                                    .home__img {
+                                        max-width: 400px;
                                     }
                                 }
                                 /*achievements/education*/
@@ -442,9 +447,13 @@
                                 @media screen and (max-width:800px) {
                                     .paragraph__text {
                                         margin-top: 3rem;
+                                        padding-left: 1rem;
+                                        padding-right: 1rem;
                                     }
                                     .paragraph__text__2 {
                                         margin-bottom: 2.5rem;
+                                        padding-left: 0.8rem;
+                                        padding-right: 0.9rem;
                                     }
                                 }
                                 /* STEM */
@@ -484,6 +493,9 @@
                                 @media screen and (max-width:768px) {
                                     .STEM .small-text {
                                         max-width: 100%;
+                                    }
+                                    .illustration {
+                                        padding-top: 3rem;
                                     }
                                 }
                                 
