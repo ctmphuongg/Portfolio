@@ -1,600 +1,685 @@
-                                @import url('https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@400;500;700&display=swap');
-                                 :root {
-                                    --header-height: 3rem;
-                                    --hue-color: 4;
-                                    /*the first one in the hsl color mode*/
-                                    --first-color: hsl(var(--hue-color), 79%, 63%);
-                                    /*#6E57E0 - turn into hsl color mode*/
-                                    --first-color-second: hsl(var(--hue-color), 69%, 50%);
-                                    --first-color-alt: hsl(var(--hue-color), 67%, 59%);
-                                    --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
-                                    --title-color: hsl(var(--hue-color), 8%, 15%);
-                                    --text-color: hsl(var(--hue-color), 8%, 45%);
-                                    --text-color-light: hsl(var(--hue-color), 10%, 65%);
-                                    --input-color: hsl(var(--hue-color), 70%, 96%);
-                                    --body-color: hsl(var(--hue-color), 60%, 99%);
-                                    --container-color: #FFF;
-                                    --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
-                                    --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
-                                    --hue-color2: 202;
-                                    /*the first one in the hsl color mode*/
-                                    --second-color: hsl(var(--hue-color2), 69%, 61%);
-                                    /*#6E57E0 - turn into hsl color mode*/
-                                    --second-color: hsl(var(--hue-color2), 69%, 61%);
-                                    --second-color-alt: hsl(var(--hue-color2), 57%, 53%);
-                                    --second-color-lighter: hsl(var(--hue-color2), 92%, 85%);
-                                    --title-color2: hsl(var(--hue-color2), 8%, 15%);
-                                    --text-color2: hsl(var(--hue-color2), 1%, 45%);
-                                    --text-color-light2: hsl(var(--hue-color2), 8%, 65%);
-                                    --input-color: hsl(var(--hue-color2), 70%, 96%);
-                                    /*Font and typography*/
-                                    --body-font: 'Kaisei HarunoUmi', serif;
-                                    /*using rem units*/
-                                    --big-font-size: 2rem;
-                                    --h1-font-size: 2.5rem;
-                                    --h2-font-size: 1.25rem;
-                                    --h3-font-size: 1rem;
-                                    --normal-font-size: .938rem;
-                                    --small-font-size: .813rem;
-                                    --smaller-font-size: .75rem;
-                                    --font-medium: 500;
-                                    --font-bold: 700;
-                                    /*margin*/
-                                    --mb-0-25: .25rem;
-                                    --mb-0-5: .5rem;
-                                    --mb-0-75: .75rem;
-                                    --mb-1: 1rem;
-                                    --mb-1-5: .5rem;
-                                    --mb-2: 2rem;
-                                    --mb-2-5: 2.5rem;
-                                    --mb-3: 3rem;
-                                    /*z index*/
-                                    --z-tooltip: 10;
-                                    --z-fixed: 100;
-                                    --z-model: 1000;
-                                }
-                                
-                                @media screen and (min-width: 968px) {
+                                    @import url('https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@400;500;700&display=swap');
                                      :root {
-                                        --big-font-size: 3rem;
-                                        --h1-font-size: 2.25rem;
-                                        --h2-font-size: 1.5rem;
-                                        --h3-font-size: 1.25rem;
-                                        --normal-font-size: 1rem;
-                                        --small-font-size: .875rem;
-                                        --smaller-font-size: .813rem;
+                                        --header-height: 3rem;
+                                        --hue-color: 4;
+                                        /*the first one in the hsl color mode*/
+                                        --first-color: hsl(var(--hue-color), 79%, 63%);
+                                        /*#6E57E0 - turn into hsl color mode*/
+                                        --first-color-second: hsl(var(--hue-color), 69%, 50%);
+                                        --first-color-alt: hsl(var(--hue-color), 67%, 59%);
+                                        --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
+                                        --title-color: hsl(var(--hue-color), 8%, 15%);
+                                        --text-color: hsl(var(--hue-color), 8%, 45%);
+                                        --text-color-light: hsl(var(--hue-color), 10%, 65%);
+                                        --input-color: hsl(var(--hue-color), 70%, 96%);
+                                        --body-color: hsl(var(--hue-color), 60%, 99%);
+                                        --container-color: #FFF;
+                                        --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
+                                        --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+                                        --hue-color2: 202;
+                                        /*the first one in the hsl color mode*/
+                                        --second-color: hsl(var(--hue-color2), 69%, 61%);
+                                        /*#6E57E0 - turn into hsl color mode*/
+                                        --second-color: hsl(var(--hue-color2), 69%, 61%);
+                                        --second-color-alt: hsl(var(--hue-color2), 57%, 53%);
+                                        --second-color-lighter: hsl(var(--hue-color2), 92%, 85%);
+                                        --title-color2: hsl(var(--hue-color2), 8%, 15%);
+                                        --text-color2: hsl(var(--hue-color2), 1%, 45%);
+                                        --text-color-light2: hsl(var(--hue-color2), 8%, 65%);
+                                        --input-color: hsl(var(--hue-color2), 70%, 96%);
+                                        /*Font and typography*/
+                                        --body-font: 'Kaisei HarunoUmi', serif;
+                                        /*using rem units*/
+                                        --big-font-size: 2rem;
+                                        --h1-font-size: 2.5rem;
+                                        --h2-font-size: 1.25rem;
+                                        --h3-font-size: 1rem;
+                                        --normal-font-size: .938rem;
+                                        --small-font-size: .813rem;
+                                        --smaller-font-size: .75rem;
+                                        --font-medium: 500;
+                                        --font-bold: 700;
+                                        /*margin*/
+                                        --mb-0-25: .25rem;
+                                        --mb-0-5: .5rem;
+                                        --mb-0-75: .75rem;
+                                        --mb-1: 1rem;
+                                        --mb-1-5: .5rem;
+                                        --mb-2: 2rem;
+                                        --mb-2-5: 2.5rem;
+                                        --mb-3: 3rem;
+                                        /*z index*/
+                                        --z-tooltip: 10;
+                                        --z-fixed: 100;
+                                        --z-model: 1000;
                                     }
-                                }
-                                
-                                @media screen and (min-width: 1920px) {
-                                     :root {
-                                        --big-font-size: 5rem;
-                                        --h1-font-size: 3.5rem;
-                                        --h2-font-size: 2.8rem;
-                                        --h3-font-size: 2.5rem;
-                                        --h4-font-size: 2.3rem;
-                                        --normal-font-size: 1.7rem;
-                                        --small-font-size: 1.3rem;
-                                        --smaller-font-size: 1rem;
+                                    
+                                    @media screen and (min-width: 968px) {
+                                         :root {
+                                            --big-font-size: 3rem;
+                                            --h1-font-size: 2.25rem;
+                                            --h2-font-size: 1.5rem;
+                                            --h3-font-size: 1.25rem;
+                                            --normal-font-size: 1rem;
+                                            --small-font-size: .875rem;
+                                            --smaller-font-size: .813rem;
+                                        }
                                     }
-                                }
-                                
-                                body.dark-theme {
-                                    --first-color-second: hsl(var(--hue-color), 30%, 8%);
-                                    --title-color: hsl(var(--hue-color), 8%, 95%);
-                                    --text-color: hsl(var(--hue-color), 8%, 75%);
-                                    --input-color: hsl(var(--hue-color), 29%, 16%);
-                                    --body-color: hsl(var(--hue-color), 28%, 12%);
-                                    --container-color: hsl(var(--hue-color), 29%, 16%);
-                                    --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
-                                    --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
-                                }
-                                
-                                .images {
-                                    max-width: 90% !important;
-                                }
-                                
-                                html {
-                                    scroll-behavior: smooth;
-                                }
-                                /* width */
-                                
-                                 ::-webkit-scrollbar {
-                                    width: .6rem;
-                                    border-radius: .5rem;
-                                    background-color: var(--scroll-bar-color);
-                                }
-                                /* Handle */
-                                
-                                 ::-webkit-scrollbar-thumb {
-                                    background-color: var(--scroll-thumb-color);
-                                    border-radius: .5rem;
-                                }
-                                
-                                 ::-webkit-scrollbar-thumb:hover {
-                                    background-color: var(--text-color-light);
-                                }
-                                
-                                body {
-                                    margin: 0;
-                                    font-family: var(--body-font) !important;
-                                    font-size: var(--normal-font-size) !important;
-                                    background-color: var(--body-color) !important;
-                                    color: var(--text-color) !important;
-                                }
-                                
-                                h1,
-                                h2,
-                                h3,
-                                h4 {
-                                    color: var(--title-color);
-                                    font-weight: var(--font-bold);
-                                }
-                                
-                                .navbar-nav {
-                                    text-align: right !important;
-                                }
-                                
-                                ul {
-                                    list-style: none;
-                                    backdrop-filter: blur(15px);
-                                }
-                                
-                                a {
-                                    text-decoration: none !important;
-                                    color: black !important;
-                                }
-                                
-                                a:hover {
-                                    color: var(--first-color) !important;
-                                }
-                                
-                                .header {
-                                    width: 100%;
-                                    position: fixed;
-                                    left: 0;
-                                    z-index: var(--z-fixed);
-                                    background-color: var(--body-color);
-                                }
-                                
-                                .nav-item {
-                                    padding-left: 2rem;
-                                }
-                                /* Home */
-                                
-                                .home__img {
-                                    border-radius: 300px !important;
-                                    max-width: 200px;
-                                }
-                                
-                                .one {
-                                    padding-top: 2% !important;
-                                }
-                                
-                                .home-container {
-                                    gap: 1rem;
-                                }
-                                
-                                .home__content {
-                                    grid-template-columns: .5fr 3fr;
-                                    padding-top: 4rem;
-                                    align-items: center;
-                                }
-                                
-                                .home__social {
-                                    display: grid;
-                                    grid-template-columns: max-content;
-                                    padding-top: 3rem;
-                                    row-gap: 1rem;
-                                }
-                                
-                                .home__social-icon {
-                                    font-size: 1.25rem;
-                                    color: #FFF !important;
-                                }
-                                
-                                .home__social-icon:hover {
-                                    color: var(--first-color-alt);
-                                }
-                                
-                                .home__intro {
-                                    margin-top: -70px;
-                                    color: #FFF !important;
-                                }
-                                
-                                .section-home {
-                                    background-image: url("./images/BG(2).png");
-                                    background-size: 100%;
-                                    background-repeat: no-repeat;
-                                    object-fit: cover;
-                                }
-                                
-                                @media screen and (max-width: 414px) {
-                                    .section-home {
-                                        background-image: url("./images/iphone.png");
+                                    
+                                    @media screen and (min-width: 1920px) {
+                                         :root {
+                                            --big-font-size: 5rem;
+                                            --h1-font-size: 3.5rem;
+                                            --h2-font-size: 2.8rem;
+                                            --h3-font-size: 2.5rem;
+                                            --h4-font-size: 2.3rem;
+                                            --normal-font-size: 1.7rem;
+                                            --small-font-size: 1.3rem;
+                                            --smaller-font-size: 1rem;
+                                        }
                                     }
-                                }
-                                
-                                @media screen and (max-width: 768px) {
-                                    .section-home {
-                                        background-image: url("./images/ipad.png");
+                                    
+                                    body.dark-theme {
+                                        --first-color-second: hsl(var(--hue-color), 30%, 8%);
+                                        --title-color: hsl(var(--hue-color), 8%, 95%);
+                                        --text-color: hsl(var(--hue-color), 8%, 75%);
+                                        --input-color: hsl(var(--hue-color), 29%, 16%);
+                                        --body-color: hsl(var(--hue-color), 28%, 12%);
+                                        --container-color: hsl(var(--hue-color), 29%, 16%);
+                                        --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
+                                        --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
                                     }
-                                }
-                                
-                                @media screen and (min-width: 1920px) {
-                                    .section-home {
-                                        background-image: url("./images/MAC.png");
+                                    
+                                    .images {
+                                        max-width: 90% !important;
                                     }
+                                    
+                                    html {
+                                        scroll-behavior: smooth;
+                                    }
+                                    /* width */
+                                    
+                                     ::-webkit-scrollbar {
+                                        width: .6rem;
+                                        border-radius: .5rem;
+                                        background-color: var(--scroll-bar-color);
+                                    }
+                                    /* Handle */
+                                    
+                                     ::-webkit-scrollbar-thumb {
+                                        background-color: var(--scroll-thumb-color);
+                                        border-radius: .5rem;
+                                    }
+                                    
+                                     ::-webkit-scrollbar-thumb:hover {
+                                        background-color: var(--text-color-light);
+                                    }
+                                    
+                                    body {
+                                        margin: 0;
+                                        font-family: var(--body-font) !important;
+                                        font-size: var(--normal-font-size) !important;
+                                        background-color: var(--body-color) !important;
+                                        color: var(--text-color) !important;
+                                    }
+                                    
+                                    h1,
+                                    h2,
+                                    h3,
+                                    h4 {
+                                        color: var(--title-color);
+                                        font-weight: var(--font-bold);
+                                    }
+                                    
+                                    ul {
+                                        list-style: none;
+                                        backdrop-filter: blur(15px);
+                                    }
+                                    
+                                    a {
+                                        text-decoration: none !important;
+                                        color: black !important;
+                                    }
+                                    
+                                    a:hover {
+                                        color: var(--first-color) !important;
+                                    }
+                                    
+                                    .header {
+                                        width: 100%;
+                                        position: fixed;
+                                        left: 0;
+                                        z-index: var(--z-fixed);
+                                        background-color: var(--body-color);
+                                    }
+                                    /* Home */
+                                    
                                     .home__img {
-                                        max-width: 400px;
+                                        border-radius: 300px !important;
+                                        max-width: 200px;
+                                        border-width: 3px;
+                                        border-color: var(--first-color);
                                     }
-                                }
-                                /*achievements/education*/
-                                
-                                .achievements {
-                                    padding-bottom: 6rem;
-                                    padding-top: 6rem;
-                                }
-                                
-                                .section__title {
-                                    color: var(--second-color) !important;
-                                    font-size: var(--h1-font-size);
-                                }
-                                
-                                .achievements hr {
-                                    color: var(--second-color) !important;
-                                    border-top: 2px solid;
-                                    max-width: 30%;
-                                    margin-left: auto;
-                                    margin-right: auto;
-                                }
-                                
-                                .achievements__tabs {
-                                    display: flex;
-                                    justify-content: space-evenly;
-                                    margin-bottom: var(--mb-2);
-                                }
-                                
-                                .achievements__button {
-                                    font-size: var(--h3-font-size);
-                                    font-weight: var(--font-medium);
-                                    cursor: pointer;
-                                }
-                                
-                                .achievements__button:hover {
-                                    color: var(--second-color);
-                                }
-                                
-                                .achievements__icon {
-                                    font-size: 1.8rem;
-                                    margin-right: var(--mb-0-25);
-                                }
-                                
-                                .achievements__data {
-                                    display: grid;
-                                    text-align: right;
-                                    grid-template-columns: 1fr max-content 1fr;
-                                    column-gap: 1.5rem;
-                                }
-                                
-                                .achievements__data__2 {
-                                    text-align: left !important;
-                                }
-                                
-                                .achievements__title {
-                                    font-size: var(--normal-font-size);
-                                    font-weight: var(--font-medium);
-                                }
-                                
-                                .achievements__subtitle {
-                                    display: inline-block;
-                                    font-size: var(--small-font-size);
-                                    margin-bottom: var(--mb-1);
-                                }
-                                
-                                .achievements__calendar {
-                                    font-size: var(--smaller-font-size);
-                                    color: var(--text-color-light2);
-                                }
-                                
-                                .achievements__rounder {
-                                    display: inline-block;
-                                    width: 13px;
-                                    height: 13px;
-                                    background-color: var(--second-color);
-                                    border-radius: 50%;
-                                }
-                                
-                                .achievements__line {
-                                    display: block;
-                                    width: 1px;
-                                    height: 100%;
-                                    background-color: var(--second-color);
-                                    transform: translate(6px, -7px);
-                                }
-                                
-                                .achievements [data-content] {
-                                    display: None;
-                                }
-                                
-                                .achievements__active[data-content] {
-                                    display: block;
-                                }
-                                
-                                .achievements__button.achievements__active {
-                                    color: var(--second-color);
-                                }
-                                /* Interests */
-                                
-                                .row {
-                                    padding-top: 5rem;
-                                }
-                                
-                                .quietude h3 {
-                                    color: var(--first-color);
-                                    font-size: var(--h1-font-size);
-                                }
-                                
-                                .quietude h4 {
-                                    color: var(--first-color-alt);
-                                }
-                                
-                                .quietude {
-                                    color: var(--text-color);
-                                }
-                                
-                                .quietude img {
-                                    justify-content: center;
-                                    max-width: 100%;
-                                }
-                                
-                                .quietude hr {
-                                    color: var(--first-color) !important;
-                                    border-top: 2px solid;
-                                    max-width: 30%;
-                                    margin-left: auto;
-                                    margin-right: auto;
-                                }
-                                
-                                .quietude .small-text {
-                                    max-width: 50%;
-                                    margin-left: auto;
-                                    margin-right: auto;
-                                }
-                                
-                                @media screen and (max-width:768px) {
-                                    .quietude .small-text {
+                                    
+                                    .one {
+                                        padding-top: 2% !important;
+                                    }
+                                    
+                                    .home-container {
+                                        gap: 1rem;
+                                    }
+                                    
+                                    .home__content {
+                                        grid-template-columns: .5fr 3fr;
+                                        padding-top: 4rem;
+                                        align-items: center;
+                                    }
+                                    
+                                    .home__social {
+                                        display: grid;
+                                        grid-template-columns: max-content;
+                                        padding-top: 3rem;
+                                        row-gap: 1rem;
+                                    }
+                                    
+                                    .home__social-icon {
+                                        font-size: 1.25rem;
+                                        color: #FFF !important;
+                                    }
+                                    
+                                    .home__social-icon:hover {
+                                        color: var(--first-color-alt);
+                                    }
+                                    
+                                    .home__intro {
+                                        margin-top: -70px;
+                                        color: #FFF !important;
+                                    }
+                                    
+                                    .section-home {
+                                        background-image: url("./images/BG(2).png");
+                                        background-size: 100%;
+                                        background-repeat: no-repeat;
+                                        object-fit: cover;
+                                    }
+                                    
+                                    @media screen and (max-width: 414px) {
+                                        .section-home {
+                                            background-image: url("./images/iphone.png");
+                                        }
+                                    }
+                                    
+                                    @media screen and (max-width: 768px) {
+                                        .section-home {
+                                            background-image: url("./images/ipad.png");
+                                        }
+                                    }
+                                    
+                                    @media screen and (min-width: 1920px) {
+                                        .section-home {
+                                            background-image: url("./images/MAC.png");
+                                        }
+                                        .home__img {
+                                            max-width: 400px;
+                                        }
+                                    }
+                                    /*achievements/education*/
+                                    
+                                    .achievements {
+                                        padding-bottom: 6rem;
+                                        padding-top: 6rem;
+                                    }
+                                    
+                                    .section__title {
+                                        color: var(--second-color) !important;
+                                        font-size: var(--h1-font-size);
+                                    }
+                                    
+                                    .achievements hr {
+                                        color: var(--second-color) !important;
+                                        border-top: 2px solid;
+                                        max-width: 30%;
+                                        margin-left: auto;
+                                        margin-right: auto;
+                                    }
+                                    
+                                    .achievements__tabs {
+                                        display: flex;
+                                        justify-content: space-evenly;
+                                        margin-bottom: var(--mb-2);
+                                    }
+                                    
+                                    .achievements__button {
+                                        font-size: var(--h3-font-size);
+                                        font-weight: var(--font-medium);
+                                        cursor: pointer;
+                                    }
+                                    
+                                    .achievements__button:hover {
+                                        color: var(--second-color);
+                                    }
+                                    
+                                    .achievements__icon {
+                                        font-size: 1.8rem;
+                                        margin-right: var(--mb-0-25);
+                                    }
+                                    
+                                    .achievements__data {
+                                        display: grid;
+                                        text-align: right;
+                                        grid-template-columns: 1fr max-content 1fr;
+                                        column-gap: 1.5rem;
+                                    }
+                                    
+                                    .achievements__data__2 {
+                                        text-align: left !important;
+                                    }
+                                    
+                                    .achievements__title {
+                                        font-size: var(--normal-font-size);
+                                        font-weight: var(--font-medium);
+                                    }
+                                    
+                                    .achievements__subtitle {
+                                        display: inline-block;
+                                        font-size: var(--small-font-size);
+                                        margin-bottom: var(--mb-1);
+                                    }
+                                    
+                                    .achievements__calendar {
+                                        font-size: var(--smaller-font-size);
+                                        color: var(--text-color-light2);
+                                    }
+                                    
+                                    .achievements__rounder {
+                                        display: inline-block;
+                                        width: 13px;
+                                        height: 13px;
+                                        background-color: var(--second-color);
+                                        border-radius: 50%;
+                                    }
+                                    
+                                    .achievements__line {
+                                        display: block;
+                                        width: 1px;
+                                        height: 100%;
+                                        background-color: var(--second-color);
+                                        transform: translate(6px, -7px);
+                                    }
+                                    
+                                    .achievements [data-content] {
+                                        display: None;
+                                    }
+                                    
+                                    .achievements__active[data-content] {
+                                        display: block;
+                                    }
+                                    
+                                    .achievements__button.achievements__active {
+                                        color: var(--second-color);
+                                    }
+                                    /* Interests */
+                                    
+                                    .row {
+                                        padding-top: 5rem;
+                                    }
+                                    
+                                    .quietude h3 {
+                                        color: var(--first-color);
+                                        font-size: var(--h1-font-size);
+                                    }
+                                    
+                                    .quietude h4 {
+                                        color: var(--first-color-alt);
+                                    }
+                                    
+                                    .quietude {
+                                        color: var(--text-color);
+                                    }
+                                    
+                                    .quietude img {
+                                        justify-content: center;
                                         max-width: 100%;
                                     }
-                                }
-                                
-                                .quietude .btn {
-                                    background-color: var(--first-color);
-                                    outline: var(--first-color);
-                                    color: #FFF;
-                                }
-                                
-                                @media screen and (min-width:1000px) {
-                                    .quietude .paragraph__text {
+                                    
+                                    .quietude hr {
+                                        color: var(--first-color) !important;
+                                        border-top: 2px solid;
+                                        max-width: 30%;
+                                        margin-left: auto;
+                                        margin-right: auto;
+                                    }
+                                    
+                                    .quietude .small-text {
+                                        max-width: 50%;
+                                        margin-left: auto;
+                                        margin-right: auto;
+                                    }
+                                    
+                                    @media screen and (max-width:768px) {
+                                        .quietude .small-text {
+                                            max-width: 100%;
+                                        }
+                                    }
+                                    
+                                    .quietude .btn {
+                                        background-color: var(--first-color);
+                                        outline: var(--first-color);
+                                        color: #FFF;
+                                    }
+                                    
+                                    @media screen and (min-width:1000px) {
+                                        .quietude .paragraph__text {
+                                            padding-top: 2rem;
+                                        }
+                                    }
+                                    
+                                    @media screen and (min-width:700px) {
+                                        .illustration {
+                                            padding-top: 3rem;
+                                        }
+                                    }
+                                    
+                                    .illustration {
+                                        justify-content: center;
+                                        max-width: 90%;
+                                    }
+                                    
+                                    .Eca__img {
+                                        max-width: 70% !important;
+                                    }
+                                    
+                                    .paragraph__text {
+                                        text-align: center;
+                                        justify-content: center;
+                                        padding-left: 1rem;
+                                        padding-right: 2rem;
+                                    }
+                                    
+                                    .paragraph__text__2 {
+                                        padding-left: 2rem;
+                                    }
+                                    
+                                    .sugar__content {
+                                        text-align: justify;
+                                    }
+                                    
+                                    .Eca__page {
+                                        color: #FFF !important;
+                                    }
+                                    
+                                    .Eca__page:hover {
+                                        color: var(--second-color-lighter) !important;
+                                    }
+                                    
+                                    @media screen and (max-width:800px) {
+                                        .paragraph__text {
+                                            margin-top: 3rem;
+                                            padding-left: 1rem;
+                                            padding-right: 1rem;
+                                        }
+                                        .paragraph__text__2 {
+                                            margin-bottom: 2.5rem;
+                                            padding-left: 0.8rem;
+                                            padding-right: 0.9rem;
+                                        }
+                                    }
+                                    /* CAROUSEL */
+                                    
+                                    .SKILLS h3 {
+                                        color: var(--second-color);
+                                        font-size: var(--h1-font-size);
+                                        margin-top: 3rem;
+                                    }
+                                    
+                                    .SKILLS hr {
+                                        color: var(--second-color) !important;
+                                        border-top: 2px solid;
+                                        max-width: 30%;
+                                        margin-left: auto;
+                                        margin-right: auto;
+                                    }
+                                    
+                                    .carousel {
+                                        max-width: 70%;
+                                        margin-top: 4rem;
+                                        margin-left: auto;
+                                        margin-right: auto;
+                                        border-style: solid;
+                                        border-color: var(--second-color)
+                                    }
+                                    /* STEM */
+                                    
+                                    .STEM h3 {
+                                        color: var(--first-color);
+                                        font-size: var(--h1-font-size);
+                                        margin-top: 3rem;
+                                    }
+                                    
+                                    .STEM h4 {
+                                        color: var(--first-color-alt);
+                                    }
+                                    
+                                    .STEM {
+                                        color: var(--text-color);
+                                    }
+                                    
+                                    .STEM img {
+                                        justify-content: center;
+                                        max-width: 100%;
+                                    }
+                                    
+                                    .STEM hr {
+                                        color: var(--first-color) !important;
+                                        border-top: 2px solid;
+                                        max-width: 30%;
+                                        margin-left: auto;
+                                        margin-right: auto;
+                                    }
+                                    
+                                    .STEM .small-text {
+                                        max-width: 50%;
+                                        margin-left: auto;
+                                        margin-right: auto;
+                                    }
+                                    
+                                    @media screen and (max-width:768px) {
+                                        .STEM .small-text {
+                                            max-width: 100%;
+                                        }
+                                        .illustration {
+                                            padding-top: 3rem;
+                                        }
+                                    }
+                                    
+                                    .STEM .btn {
+                                        background-color: var(--first-color);
+                                        outline: var(--first-color);
+                                        color: #FFF;
+                                        text-align: center;
+                                        align-items: center;
+                                    }
+                                    
+                                    .blog__page {
+                                        color: #FFF!important;
+                                    }
+                                    
+                                    .blog__page:hover {
+                                        color: var(--first-color-lighter) !important;
+                                    }
+                                    /* Portfolio section*/
+                                    
+                                    .Projects h3 {
+                                        color: var(--second-color);
+                                        font-size: var(--h1-font-size);
+                                        margin-top: 3rem;
+                                    }
+                                    
+                                    .Projects hr {
+                                        color: var(--second-color) !important;
+                                        border-top: 2px solid;
+                                        max-width: 30%;
+                                        margin-left: auto;
+                                        margin-right: auto;
+                                    }
+                                    
+                                    #below-section {
+                                        color: #000;
+                                    }
+                                    
+                                    #small-text {
+                                        color: white;
+                                    }
+                                    /*Portfolio items*/
+                                    
+                                    #portfolio .portfolio-item {
+                                        margin: 0 0 15px;
+                                        right: 0;
+                                        border: 1px outset rgba(255, 255, 255, 0.6);
+                                    }
+                                    
+                                    #portfolio .portfolio-item:hover {
+                                        transition: 0.5s;
+                                        box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.9);
+                                    }
+                                    
+                                    #portfolio .portfolio-item .portfolio-link {
+                                        display: block;
+                                        position: relative;
+                                        max-width: 400px;
+                                        margin: 0 auto;
+                                    }
+                                    
+                                    #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
+                                        opacity: 1;
+                                    }
+                                    
+                                    #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+                                        position: absolute;
+                                        width: 100%;
+                                        height: 20px;
+                                        font-size: 20px;
+                                        text-align: center;
+                                        top: 50%;
+                                        margin-top: -12px;
+                                        color: #fff;
+                                    }
+                                    
+                                    #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
+                                        margin-top: -12px;
+                                    }
+                                    
+                                    #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
+                                    #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
+                                        margin: 0;
+                                    }
+                                    
+                                    #portfolio .portfolio-item .portfolio-caption h4 {
+                                        text-transform: none;
+                                        margin: 0;
+                                    }
+                                    
+                                    #portfolio * {
+                                        z-index: 2;
+                                    }
+                                    
+                                    #portfolio .img-responsive {
+                                        max-width: 100%;
+                                    }
+                                    
+                                    @media (min-width:767px) {
+                                        #portfolio .portfolio-item {
+                                            margin: 0 0 30px;
+                                        }
+                                    }
+                                    /*Footer*/
+                                    
+                                    .footer {
                                         padding-top: 2rem;
                                     }
-                                }
-                                
-                                @media screen and (min-width:700px) {
-                                    .illustration {
-                                        padding-top: 3rem;
-                                    }
-                                }
-                                
-                                .community h3 {
-                                    margin-top: 4rem;
-                                    color: var(--second-color);
-                                    font-size: var(--h1-font-size);
-                                }
-                                
-                                .community h4 {
-                                    color: var(--second-color-alt);
-                                }
-                                
-                                .community {
-                                    color: var(--text-color2);
-                                }
-                                
-                                .illustration {
-                                    justify-content: center;
-                                    max-width: 90%;
-                                }
-                                
-                                .Eca__img {
-                                    max-width: 70% !important;
-                                }
-                                
-                                .community hr {
-                                    color: var(--second-color) !important;
-                                    border-top: 2px solid;
-                                    max-width: 30%;
-                                    margin-left: auto;
-                                    margin-right: auto;
-                                }
-                                
-                                .paragraph__text {
-                                    text-align: center;
-                                    justify-content: center;
-                                    padding-left: 1rem;
-                                    padding-right: 2rem;
-                                }
-                                
-                                .paragraph__text__2 {
-                                    padding-left: 2rem;
-                                }
-                                
-                                .sugar__content {
-                                    text-align: justify;
-                                }
-                                
-                                .Eca__page {
-                                    color: #FFF !important;
-                                }
-                                
-                                .community .btn {
-                                    background-color: var(--second-color);
-                                }
-                                
-                                .Eca__page:hover {
-                                    color: var(--second-color-lighter) !important;
-                                }
-                                
-                                @media screen and (max-width:800px) {
-                                    .paragraph__text {
-                                        margin-top: 3rem;
-                                        padding-left: 1rem;
-                                        padding-right: 1rem;
-                                    }
-                                    .paragraph__text__2 {
-                                        margin-bottom: 2.5rem;
-                                        padding-left: 0.8rem;
-                                        padding-right: 0.9rem;
-                                    }
-                                }
-                                /* STEM */
-                                
-                                .STEM h3 {
-                                    color: var(--first-color);
-                                    font-size: var(--h1-font-size);
-                                }
-                                
-                                .STEM h4 {
-                                    color: var(--first-color-alt);
-                                }
-                                
-                                .STEM {
-                                    color: var(--text-color);
-                                }
-                                
-                                .STEM img {
-                                    justify-content: center;
-                                    max-width: 100%;
-                                }
-                                
-                                .STEM hr {
-                                    color: var(--first-color) !important;
-                                    border-top: 2px solid;
-                                    max-width: 30%;
-                                    margin-left: auto;
-                                    margin-right: auto;
-                                }
-                                
-                                .STEM .small-text {
-                                    max-width: 50%;
-                                    margin-left: auto;
-                                    margin-right: auto;
-                                }
-                                
-                                @media screen and (max-width:768px) {
-                                    .STEM .small-text {
-                                        max-width: 100%;
-                                    }
-                                    .illustration {
-                                        padding-top: 3rem;
-                                    }
-                                }
-                                
-                                .STEM .btn {
-                                    background-color: var(--first-color);
-                                    outline: var(--first-color);
-                                    color: #FFF;
-                                    text-align: center;
-                                    align-items: center;
-                                }
-                                
-                                .blog__page {
-                                    color: #FFF!important;
-                                }
-                                
-                                .blog__page:hover {
-                                    color: var(--first-color-lighter) !important;
-                                }
-                                /*Footer*/
-                                
-                                .footer {
-                                    padding-top: 2rem;
-                                }
-                                
-                                .footer__container {
-                                    display: flex !important;
-                                    row-gap: 3.5rem;
-                                    grid-template-columns: repeat(3, 1fr) !important;
-                                }
-                                
-                                .footer__bg {
-                                    background-color: var(--second-color);
-                                    padding: 1.5rem 0 1.5rem !important;
-                                }
-                                
-                                .footer__title {
-                                    font-size: var(--h1-font-size);
-                                    margin-bottom: var(--mb-0-25);
-                                }
-                                
-                                .footer__subtitle {
-                                    padding-top: 1rem;
-                                    font-size: var(--normal-font-size);
-                                }
-                                
-                                .footer__links {
-                                    padding-left: 15%;
-                                    padding-right: 10%;
-                                    display: flex;
-                                    flex-direction: column;
-                                    row-gap: 1rem;
-                                }
-                                
-                                .footer__social {
-                                    font-size: 1.25rem;
-                                    margin-top: 1rem;
-                                    margin-left: var(--mb-1-5);
-                                }
-                                
-                                .footer__social:hover {
-                                    color: var(--second-color-lighter) !important;
-                                }
-                                
-                                .footer__title,
-                                .footer__subtitle,
-                                .footer__links,
-                                .footer__social {
-                                    color: #fff !important;
-                                }
-                                
-                                .footer__socials {
-                                    display: flex!important;
-                                    flex-direction: column!important;
-                                    padding-top: 1rem;
-                                }
-                                
-                                @media screen and (max-width:700px) {
-                                    .footer {
-                                        padding-top: 1.5rem;
-                                    }
+                                    
                                     .footer__container {
-                                        display: flex;
-                                        flex-direction: column;
+                                        display: flex !important;
+                                        row-gap: 3.5rem;
+                                        grid-template-columns: repeat(3, 1fr) !important;
                                     }
+                                    
                                     .footer__bg {
                                         background-color: var(--second-color);
-                                        padding: 1.5rem 0 1rem;
+                                        padding: 1.5rem 0 1.5rem !important;
                                     }
+                                    
                                     .footer__title {
                                         font-size: var(--h1-font-size);
                                         margin-bottom: var(--mb-0-25);
                                     }
+                                    
                                     .footer__subtitle {
-                                        font-size: var(--small-font-size);
+                                        padding-top: 1rem;
+                                        font-size: var(--normal-font-size);
                                     }
+                                    
                                     .footer__links {
-                                        padding-left: 0;
+                                        padding-left: 15%;
+                                        padding-right: 10%;
                                         display: flex;
                                         flex-direction: column;
                                         row-gap: 1rem;
                                     }
-                                }
+                                    
+                                    .footer__social {
+                                        font-size: 1.25rem;
+                                        margin-top: 1rem;
+                                        margin-left: var(--mb-1-5);
+                                    }
+                                    
+                                    .footer__social:hover {
+                                        color: var(--second-color-lighter) !important;
+                                    }
+                                    
+                                    .footer__title,
+                                    .footer__subtitle,
+                                    .footer__links,
+                                    .footer__social {
+                                        color: #fff !important;
+                                    }
+                                    
+                                    .footer__socials {
+                                        display: flex!important;
+                                        flex-direction: column!important;
+                                        padding-top: 1rem;
+                                    }
+                                    
+                                    @media screen and (max-width:700px) {
+                                        .footer {
+                                            padding-top: 1.5rem;
+                                        }
+                                        .footer__container {
+                                            display: flex;
+                                            flex-direction: column;
+                                            row-gap: 0.5rem;
+                                        }
+                                        .footer__bg {
+                                            background-color: var(--second-color);
+                                            padding: 0.5rem 0 0.5rem;
+                                        }
+                                        .footer__title {
+                                            font-size: var(--h1-font-size);
+                                            margin-bottom: var(--mb-0-25);
+                                        }
+                                        .footer__subtitle {
+                                            font-size: var(--small-font-size);
+                                        }
+                                        .footer__links {
+                                            padding-left: 0;
+                                            display: flex;
+                                            flex-direction: column;
+                                            row-gap: 0.5rem;
+                                        }
+                                        .footer__socials {
+                                            display: flex!important;
+                                            flex-direction: row!important;
+                                            column-gap: 0.5rem;
+                                            align-items: center;
+                                        }
+                                    }

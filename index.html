@@ -2,26 +2,24 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <title>Phuong Cao</title>
 
 </head>
 
 <body>
-
     <header class="header" id="header">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
@@ -31,13 +29,8 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href=#></a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav me-2" id="nav-menu">
+                <div class="nav justify-content-end collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="nav justify-content-end">
                         <li class="nav-item">
                             <a href="#Home" class="nav-link active-link">Home</a>
                         </li>
@@ -48,10 +41,13 @@
                             <a href="#quietude" class="nav-link active-link">Interests</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#community" class="nav-link">Community</a>
+                            <a href="#skill" class="nav-link">Skills</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#STEM" class="nav-link">STEM</a>
+                            <a href="#STEM" class="nav-link">Experiences</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#portfolio" class="nav-link">Projects</a>
                         </li>
                     </ul>
                 </div>
@@ -75,7 +71,7 @@
                                 <i class="uil uil-github-alt"></i>
                             </a>
                         </div>
-                        <div class="home__intro"> <img src="./images/cactus.png" class="home__img">
+                        <div class="home__intro"> <img src="./images/MP.png" class="home__img">
                             <p class="one"> Hi, my name is Minh Phuong</p>
                             <p class="two"> I'm a senior at Nguyen Thuong Hien</p>
                             <div class="three">
@@ -257,77 +253,68 @@
                             <p>My grandmother has a very beautiful garden aand she spent half of her every day taking care of it. And I'm proud to be "the heir" of that small garden. Therefore, I've prepared for such property since I was going to kindergarten.
                                 I have to say that looking plants grow up gradually is very satisfying.
                             </p>
-                            <p><i>Random fact: One of the most wonderful achievements I got at 8 was growing enough azuki bean for my grandmother's "chè đậu đỏ"</i></p>
+                            <p><i>Random fact: One of the most wonderful achievements I got at 8 was growing enough azuki bean for my grandmother's sweet soup</i></p>
                         </div>
                     </div>
                 </div>
             </div>
 
         </section>
-        <section class="community section " id="community">
-            <div class="container-fluid col-md-12 text-center ">
-
-                <h3 id="title">Community</h3>
-                <hr>
-                <div class="row ">
-                    <div class="col-md-6 ">
-                        <img src="images/SUGAR_WS.png " class="illustration images">
-                        <p class="text-muted "> Workshop Vuong(g) </p>
+        <!--Carousel-->
+        <section class="SKILLS section " id="skill">
+            <h3 class="text-center" id="title ">Skills</h3>
+            <hr>
+            <div container-fluid>
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="./images/SKILLS.gif" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="./images/SKILLS2.gif" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="./images/SKILLS3.gif" alt="Third slide">
+                        </div>
                     </div>
-                    <div class="col-md-6 paragraph__text" data-aos="fade-up">
-                        <h4>- SUGAR VIETNAM - Route to knowledge -</h4>
-                        <p>HEAD OF ACADEMICS, LEADER OF FR TEAM 2 | 9/2020-1/2021</p>
-                        <p><i>Assisted 11 children, organized Workshop Vuon(g) with over 100 participants, raised 2.5 million VND </i></p>
-                        <p class="sugar__content ">
-                            "TO GIVE IS TO GET". Indeed, SUGAR was not only a place where I could contribute my knowledge through teaching disadvantaged children to help the community but also where I received priceless "presents". Each child had unique stories that I’d never imagined
-                            before, but they all met at same values: an unquenchable thirst for knowledge, a resilience to fight with difficulties, and a positive view of life. Their stories, their ways of overcoming life challenges taught me to never
-                            limit my ability because of any difficulties and to never say “I can’t”.
-                        </p>
-                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
-                <div class="row ">
-                    <div class="col-md-6 paragraph__text__2" data-aos="fade-up">
-                        <h4>- THE ECATALYST -</h4>
-                        <p>COFOUNDER, PRESIDENT| 2/2021-present</p>
-                        <p><i>Attracted 1700 followers, organized a workshop and infographics contest with 100 participants nationwide, received 2.3 million VND sponsorship</i> </p>
-                        <p class="sugar__content "> With wonderful experiences at SUGAR, I founded The Ecatalyst with one of my best friends there to raise people's awareness about the environment through online posts. During that time, I was able to both improve my leadership skills
-                            through activities with talented people around the country and contribute to improving the environment.
-                        </p>
-                        <button type="button " class="btn"><a class="Eca__page " href="https://www.facebook.com/theecatalyst.org ">Visit us</a></button>
-                    </div>
-                    <div class="col-md-6 ">
-                        <img src="images/Logo.png " class="Eca__img images">
-                    </div>
-                </div>
-
+            </div>
         </section>
 
-        <section class="STEM section" id="STEM">
-            <div class="container-fluid text-center">
+        <section class="STEM section " id="STEM">
+            <div class="container-fluid text-center ">
 
-                <h3 id="title">STEM</h3>
+                <h3 id="title ">Experiences</h3>
                 <hr>
                 <p class="small-text text-center "><i>Starting roaming in every existing mathematics forum at the age of six, I have always been an enthusiast for STEM. The STEM subjects excite me with their appealing complexity and the arts of creating.  
                 </i></p>
-                <div class="row small__part">
-                    <div class="col-md-6">
-                        <img src="images/EMP.png" class="images">
+                <div class="row small__part ">
+                    <div class="col-md-6 ">
+                        <img src="images/EMP.png " class="images ">
 
                     </div>
-                    <div class=" col-md-6 paragraph__text" data-aos="fade-up">
+                    <div class=" col-md-6 paragraph__text " data-aos="fade-up ">
                         <h4>- EMP NTH -</h4>
                         <P>
                             <I>Organized EMP class teaching robotics and programming languages for 35 students, wrote and managed 1000 followers page</I>
                         </P>
-                        <p class="sugar__content"> EMP was the first school club I participated in at Nguyen Thuong Hien. Therefore, it always has a special meaning to me. EMP is where I nurtured my passion for STEM through various activities, from researching about technology
+                        <p class="sugar__content "> EMP was the first school club I participated in at Nguyen Thuong Hien. Therefore, it always has a special meaning to me. EMP is where I nurtured my passion for STEM through various activities, from researching about technology
                             for posts on-page, managing EMP class to working with experienced alumni in the area to improve teaching materials. The Arduino and sensors that I worked on, the experience that I received from alumni about robotics, AI, and
                             web development, and the opportunities to collaborate with other passionate students all inspired me to pursue my goals in computer science.
                         </p>
 
                     </div>
                 </div>
-                <div class="row col-md-12 small__part">
-                    <div class="col-md-6 paragraph__text__2" data-aos="fade-up">
+                <div class="row col-md-12 small__part ">
+                    <div class="col-md-6 paragraph__text__2 " data-aos="fade-up ">
                         <h4>- Cactus Learners -</h4>
                         <div class="sugar__content ">
                             <p> “Cactus Learners” is a website I’ve been developing from scratch to research and write about my favorite topics: Technology, Environment, and Astronomy. This is not only an environment for me to apply the front-end web development
@@ -337,20 +324,20 @@
                             <p><i>Random fact: Sometimes, I post some articles I wrote on Facebook groups, and once, I got over 2,300 reactions and 200 comments !!!
                             </i></p>
                         </div>
-                        <button type="button " class="btn"><a class="blog__page " href="https://ctmphuongg.github.io/Cactus-learners/">Visit my blog</a></button>
+                        <button type="button " class="btn "><a class="blog__page " href="https://ctmphuongg.github.io/Cactus-learners/ ">Visit my blog</a></button>
                     </div>
                     <div class="col-md-6 ">
-                        <img src="images/cactus.png " class="images">
+                        <img src="images/cactus.png " class="images ">
                     </div>
                 </div>
-                <div class="row small__part">
-                    <div class="col-md-6">
-                        <img src="images/Shecodes.jpg" class="images">
+                <div class="row small__part ">
+                    <div class="col-md-6 ">
+                        <img src="images/Shecodes.jpg " class="images ">
 
                     </div>
-                    <div class=" col-md-6 paragraph__text" data-aos="fade-up">
-                        <h4>- HACKATHONS-</h4>
-                        <div class="sugar__content">
+                    <div class=" col-md-6 paragraph__text " data-aos="fade-up ">
+                        <h4>- HACKATHONS -</h4>
+                        <div class="sugar__content ">
                             <p>Participating in national Hackathons is my next step on my way pursuing computer science. There, I had the opportunities to match teams and work with experienced competitors, from whom I learned a lot of useful knowledge. The
                                 majority of competitors were university students and some were working in the STEM profession, which made the contest highly competitive and stressful. Working with such talented people enabled me to broaden my horizons
                                 about the necessary skills to become a professional computer scientist.
@@ -359,25 +346,98 @@
                     </div>
                 </div>
 
-                <div class="row col-md-12 small__part">
-                    <div class="col-md-6 paragraph__text" data-aos="fade-up">
-                        <h4>- Github projects -</h4>
-                        <div class="sugar__content ">
-                            <p> Github is where I store random projects I made after wandering on Youtube tutorials and Stackoverflow: from simple games, a calculator, a random happy-birthday project to a whole website. Although some small games I've made
-                                haven't been completed yet, the process of recreating the games I used to play as a child, making my own website to indulge in, or doing something special for my beloved ones by utilizing the magical power of technology
-                                all fill me with excitement and pride. I hope I can soon bring out the more perfect versions of them. :></p>
-                        </div>
-                        <p> </p>
-                        <button type="button " class="btn"><a class="blog__page " href="https://github.com/ctmphuongg">Visit my Github repositories</a></button>
-                    </div>
-                    <div class="col-md-6 ">
-                        <img src="images/Github.png " class="images illustration">
-                    </div>
-                </div>
             </div>
 
         </section>
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+        <section class="Projects section" id="portfolio" class="bg-light-gray bounds">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h3 id="title ">Recent projects</h3>
+                        <hr>
+                    </div>
+                </div>
+                <!-- Portfolio img1 -->
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                        <a href="https://ctmphuongg.github.io/Cactus-learners/" lass="portfolio-link">
+                            <img src="images/cactus.png" class="img-responsive" alt="">
+                        </a>
+                        <div class="portfolio-caption">
+                            <h4>Blogging web: Cactus Learners</h4>
+                            <p id="small-text" class="text-muted">HTML, CSS & Bootstrap</p>
+                        </div>
+                    </div>
+                    <!-- End of Portfolio img1 -->
+
+                    <!-- Portfolio img2 -->
+                    <div class="col-md-4 col-sm-6 portfolio-item portfolio2">
+                        <a href="https://github.com/ctmphuongg/Turtle_race" class="portfolio-link">
+                            <img src="images/turtle.png" class="img-responsive" alt="">
+                        </a>
+                        <div class="portfolio-caption">
+                            <h4>Turtle Race Game</h4>
+                            <p id="small-text" class="text-muted">Python</p>
+                        </div>
+                    </div>
+                    <!-- End of Portfolio img2 -->
+
+                    <!-- Portfolio img3 -->
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                        <a href="https://ctmphuongg.github.io/Calculator/" class="portfolio-link">
+                            <img src="images/Calculator.png" class="img-responsive">
+                        </a>
+                        <div class="portfolio-caption">
+                            <h4>Pastel Calculator</h4>
+                            <p id="small-text" class="text-muted">CSS and Javascript</p>
+                        </div>
+                    </div>
+                    <!-- End of Portfolio img3 -->
+
+                    <!-- Portfolio img4 -->
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                        <a href="https://hand-speaking.web.app/" class="portfolio-link">
+
+                            <img src="images/slide1.png" class="img-responsive" alt="">
+                        </a>
+                        <div class="portfolio-caption">
+                            <h4>Sign-language Website: Handspeaking</h4>
+                            <p id="small-text" class="text-muted">Bootstrap and Firebase</p>
+                        </div>
+                    </div>
+                    <!-- End of Portfolio img4 -->
+
+                    <!-- Portfolio img5 -->
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                        <a href="https://ctmphuongg.github.io/hpbd/" class="portfolio-link">
+                            <img src="images/hpbd.png" class="img-responsive" alt="">
+                        </a>
+                        <div class="portfolio-caption">
+                            <h4>Awesome birthday</h4>
+                            <p id="small-text" class="text-muted">Javascript</p>
+                        </div>
+                    </div>
+                    <!-- End of Portfolio img5 -->
+
+                    <!-- Portfolio img6 -->
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                        <a href="https://ctmphuongg.github.io/Dinosaur_game/" class="portfolio-link">
+
+                            <img src="images/dinosaur.png" class="img-responsive " alt=" ">
+                        </a>
+                        <div class="portfolio-caption ">
+                            <h4>Internet out!</h4>
+                            <p id="small-text " class="text-muted ">CSS and Javascript</p>
+                        </div>
+                    </div>
+                    <!-- End of Portfolio img6 -->
+                </div>
+            </div>
+        </section>
+
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js "></script>
         <script>
             AOS.init();
         </script>
@@ -409,15 +469,15 @@
                 </ul>
 
                 <div class="footer__socials ">
-                    <a href="https://www.facebook.com/minhphuong.cao.50/" target="_blank " class="footer__social ">
+                    <a href="https://www.facebook.com/minhphuong.cao.50/ " target="_blank " class="footer__social ">
                         <i class="uil uil-facebook-f "></i>
                     </a>
 
-                    <a href="https://www.linkedin.com/in/ph%C6%B0%C6%A1ng-cao-393754215/" target="_blank " class="footer__social ">
-                        <i class="uil uil-linkedin"></i>
+                    <a href="https://www.linkedin.com/in/ph%C6%B0%C6%A1ng-cao-393754215/ " target="_blank " class="footer__social ">
+                        <i class="uil uil-linkedin "></i>
                     </a>
 
-                    <a href="https://github.com/ctmphuongg" target="_blank " class="footer__social ">
+                    <a href="https://github.com/ctmphuongg " target="_blank " class="footer__social ">
                         <i class="uil uil-github-alt "></i>
                     </a>
                 </div>
