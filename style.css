@@ -66,7 +66,7 @@
                                         }
                                     }
                                     
-                                    @media screen and (min-width: 1920px) {
+                                    @media screen and (min-width: 1900px) {
                                          :root {
                                             --big-font-size: 5rem;
                                             --h1-font-size: 3.5rem;
@@ -129,6 +129,10 @@
                                     h4 {
                                         color: var(--title-color);
                                         font-weight: var(--font-bold);
+                                    }
+                                    
+                                    .navbar-nav {
+                                        text-align: right;
                                     }
                                     
                                     ul {
@@ -331,6 +335,7 @@
                                     
                                     .quietude h4 {
                                         color: var(--first-color-alt);
+                                        font-size: var(--h2-font-size);
                                     }
                                     
                                     .quietude {
@@ -409,7 +414,7 @@
                                     }
                                     
                                     .Eca__page:hover {
-                                        color: var(--second-color-lighter) !important;
+                                        color: var(--first-color-lighter) !important;
                                     }
                                     
                                     @media screen and (max-width:800px) {
@@ -458,6 +463,7 @@
                                     
                                     .STEM h4 {
                                         color: var(--first-color-alt);
+                                        font-size: var(--h2-font-size);
                                     }
                                     
                                     .STEM {
@@ -546,7 +552,7 @@
                                     #portfolio .portfolio-item .portfolio-link {
                                         display: block;
                                         position: relative;
-                                        max-width: 400px;
+                                        max-width: 700px;
                                         margin: 0 auto;
                                     }
                                     
