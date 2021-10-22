@@ -411,6 +411,7 @@
                                     
                                     .Eca__page {
                                         color: #FFF !important;
+                                        font-size: var(--normal-font-size);
                                     }
                                     
                                     .Eca__page:hover {
